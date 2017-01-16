@@ -1,0 +1,30 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "noarg": true,
+  "noempty": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "node": true,
+  "esversion": 6
+}
+
+/**
+配置讲解(配置选项 true表示打开，false表示关闭)：
+
+第二行：curly 表示所有的代码块必须使用大括号
+第三行：eqeqeq 表示判断相等时，必须使用 ===
+第四行：immed 表示立即执行函数必须用括号包起来 (function () { } ());
+第五行：noarg 表示禁止使用 arguments.caller 和 arguments.callee
+第六行：noempty 表示禁止出现空的代码块 { }
+第七行：quotmark 是引号的使用规则，有以下四个选项
+                false : 不检查
+                true : 检查一致性（要么都是单引号，要么都是双引号）
+                single : 必须都是单引号
+                double : 必须都是双引号
+第八行：undef 表示所有的局部变量都必须先声明再使用
+第九行：unused 表示禁止变量已经声明，但却不使用
+第十行：node 表明你的项目是NodeJS项目，require等node特有的全局函数将通过检查
+**/
